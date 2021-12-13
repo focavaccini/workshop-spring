@@ -12,6 +12,8 @@ import javax.persistence.Id;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 @Entity
 @Table(name = "tb_user")
 public class User implements Serializable{
@@ -24,21 +26,22 @@ public class User implements Serializable{
 	private String name;
 	private String email;
 	private String phone;
-	private String passworld;
+	private String password;
 	
+	@JsonIgnore
 	@OneToMany(mappedBy = "client")
 	private List<Order> orders = new ArrayList<>();
 	
 	public User() {
 	}
 
-	public User(Long id, String name, String email, String phone, String passworld) {
+	public User(Long id, String name, String email, String phone, String password) {
 		super();
 		this.id = id;
 		this.name = name;
 		this.email = email;
 		this.phone = phone;
-		this.passworld = passworld;
+		this.password = password;
 	}
 
 	public Long getId() {
@@ -73,12 +76,12 @@ public class User implements Serializable{
 		this.phone = phone;
 	}
 
-	public String getPassworld() {
-		return passworld;
+	public String getPassword() {
+		return password;
 	}
 
-	public void setPassworld(String passworld) {
-		this.passworld = passworld;
+	public void setPassword(String password) {
+		this.password = password;
 	}
 	
 	public List<Order> getOrders() {
