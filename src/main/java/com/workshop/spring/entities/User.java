@@ -1,4 +1,4 @@
-package com.workshop.demo.workshop.spring.entities;
+package com.workshop.spring.entities;
 
 import java.io.Serializable;
 import java.util.ArrayList;

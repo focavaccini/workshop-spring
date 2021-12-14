@@ -1,4 +1,4 @@
-package com.workshop.demo.workshop.spring.services;
+package com.workshop.spring.services;
 
 import java.util.List;
 import java.util.Optional;
@@ -6,8 +6,8 @@ import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.workshop.demo.workshop.spring.entities.User;
-import com.workshop.demo.workshop.spring.repositories.UserRepository;
+import com.workshop.spring.entities.User;
+import com.workshop.spring.repositories.UserRepository;
 
 @Service
 public class UserService {

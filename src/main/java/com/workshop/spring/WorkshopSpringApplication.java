@@ -1,4 +1,4 @@
-package com.workshop.demo.workshop.spring;
+package com.workshop.spring;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

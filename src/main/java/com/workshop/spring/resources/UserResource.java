@@ -1,4 +1,4 @@
-package com.workshop.demo.workshop.spring.resources;
+package com.workshop.spring.resources;
 
 import java.util.List;
 
@@ -9,8 +9,8 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.workshop.demo.workshop.spring.entities.User;
-import com.workshop.demo.workshop.spring.services.UserService;
+import com.workshop.spring.entities.User;
+import com.workshop.spring.services.UserService;
 
 @RestController
 @RequestMapping(value = "/users")
